@@ -6,6 +6,7 @@ maintainer: Andrew Cowie <andrew@operationaldynamics.com>
 copyright: © 2017-2020 Operational Dynamics, and Others
 license: MIT
 tested-with: GHC==8.6
+
 ghc-options: -Wall -Wwarn -fwarn-tabs
 
 dependencies:
@@ -13,6 +14,17 @@ dependencies:
 
 executables:
   hello:
+    source-dirs:
+      - src
     main: HelloMain.hs
-    source-dirs: src
     ghc-options: -threaded
+
+tests:
+  check:
+    dependencies:
+      - hspec
+    ghc-options: -threaded
+    source-dirs:
+      - tests
+    main: TestSuite.hs
+    other-modules: []

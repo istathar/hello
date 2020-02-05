@@ -3,6 +3,8 @@
 
 module Main where
 
+import Core.Program
+
 main :: IO ()
-main = do
-    putStrLn "Hello World"
+main = execute $ do
+    write "Hello World"

@@ -10,7 +10,10 @@ tested-with: GHC==8.6
 ghc-options: -Wall -Wwarn -fwarn-tabs
 
 dependencies:
-- base
+  - base
+  - core-data
+  - core-text
+  - core-program >= 0.2.4
 
 executables:
   hello:

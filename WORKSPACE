@@ -38,7 +38,7 @@ stack_snapshot(
     # This uses an unpinned version of stack_snapshot, meaning that stack is invoked on every build.
     # To switch to pinned stackage dependencies, run `bazel run @stackage-unpinned//:pin` and
     # uncomment the following line.
-    # stack_snapshot_json = "//:stackage_snapshot.json",
+    stack_snapshot_json = "//:stackage_snapshot.json",
 )
 
 # Download a GHC binary distribution from haskell.org and register it as a toolchain.

@@ -1,5 +1,5 @@
-resolver: lts-16.18
+resolver: lts-16.22
 packages:
  - .
 nix:
-  packages: []
+  packages: [zlib]

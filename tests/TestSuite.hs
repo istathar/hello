@@ -1,7 +1,7 @@
 {-# LANGUAGE OverloadedStrings #-}
 
 import Control.Exception (finally)
-import Test.Hspec (Spec, hspec, describe, it, shouldBe)
+import Test.Hspec (Spec, describe, hspec, it, shouldBe)
 
 main :: IO ()
 main = do

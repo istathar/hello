@@ -7,5 +7,4 @@ import Core.Program
 
 main :: IO ()
 main = execute $ do
-  write "Hello World"
-
+    write "Hello World"

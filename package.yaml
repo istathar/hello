@@ -12,8 +12,8 @@ ghc-options: -Wall -Wwarn -fwarn-tabs
 dependencies:
   - base
   - core-data
-  - core-text
-  - core-program >= 0.2.4
+  - core-text >= 0.3.2
+  - core-program >= 0.2.9
 
 executables:
   hello:
@@ -21,6 +21,7 @@ executables:
       - src
     main: HelloMain.hs
     ghc-options: -threaded
+    other-modules: []
 
 tests:
   check:

@@ -11,6 +11,15 @@ $ stack test
 $ stack exec -- hello
 ```
 
+You can combine the test and run steps with:
+
+```
+$ stack run hello
+```
+
+assuming (as is the case here) that there's an executable named `hello` in the
+package configuration.
+
 The application stub is in _src/HelloMain.hs_ and the unit test stub is in
 _tests/TestSuite.hs_.
 

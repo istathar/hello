@@ -1,6 +1,5 @@
 name: Check
 on:
-  pull_request:
   push:
 
 jobs:
@@ -28,4 +27,4 @@ jobs:
             restore-keys: ${{ runner.os }}-
 
         - name: Build sources and run tests
-          run: "stack test --system-ghc"
+          run: "stack test"

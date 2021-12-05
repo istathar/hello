@@ -11,6 +11,8 @@ jobs:
           uses: actions/setup-haskell@v1.1
           with:
             enable-stack: true
+            stack-no-global: true
+            stack-setup-ghc: true
             ghc-version: '8.10.7'
 
         - name: Clone project

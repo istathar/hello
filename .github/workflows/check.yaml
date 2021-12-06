@@ -33,4 +33,5 @@ jobs:
         - name: Run tests
           run: |
             stack test
-            ls /usr/local/bin
+            echo "PATH=$PATH"
+            ls ~/.local/bin

@@ -9,6 +9,8 @@ jobs:
       steps:
         - name: Install Stack
           run: |
+            which stack
+            stack --version
             mkdir -p ~/.local/bin
             curl -sSL https://github.com/commercialhaskell/stack/releases/download/v2.7.3/stack-2.7.3-linux-x86_64.tar.gz \
                 | tar -x -z -C ~/.local/bin --strip-components=1 --wildcards '*stack'
@@ -34,5 +36,3 @@ jobs:
         - name: Run tests
           run: |
             stack test
-            echo "PATH=$PATH"
-            ls ~/.local/bin

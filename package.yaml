@@ -20,7 +20,8 @@ executables:
     source-dirs:
       - src
     main: HelloMain.hs
-    ghc-options: -threaded
+    ghc-options:
+    - -threaded
     other-modules: []
 
 tests:

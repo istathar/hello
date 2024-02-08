@@ -1,5 +1,5 @@
-resolver: lts-20.11
-compiler: ghc-9.2.5
+resolver: lts-21.25
+compiler: ghc-9.4.8
 packages:
 - .
 
@@ -10,7 +10,7 @@ extra-deps:
 # Stack resolver if you need something newer than what is in the snaphot above.
 #
 
-- core-data-0.3.8.0
-- core-program-0.6.5.0
-- core-text-0.3.8.0
-- core-telemetry-0.2.7.3
+- core-data-0.3.9.1
+- core-program-0.7.0.0
+- core-text-0.3.8.1
+- core-telemetry-0.2.9.4
